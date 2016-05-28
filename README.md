@@ -1,0 +1,1 @@
+# forfriend.github.io
