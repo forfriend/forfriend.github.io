@@ -1,0 +1,44 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<title>登录界面</title>
+<link href="css/denglu.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript">
+	function reloadCode() {
+		var time = new Date().getTime();
+		document.getElementById("imagecode").src ="<%=request.getContextPath()%>/ImageServlet?d="+ time;
+	}
+</script>
+</head>
+<body>
+	<div class="container">
+		<div class="body">
+			<p class="p">户口管理员入口</p>
+			<div class="div-form">
+				<form class="registerform"
+					action="<%=request.getContextPath()%>/LoginServlet" method="post">
+					<input type="text" class="form-control" id="" name="name"
+						placeholder="邮箱"
+						style="background-image: url('images/user.png'); background-position: 4% 50%; background-repeat: no-repeat">
+					<input type="password" name="password" value=""
+						oncopy="return False" oncut="return False" onpaste="return False"
+						class="form-control" placeholder="密码"
+						style="background-image: url('images/password.png'); background-position: 4% 50%; background-repeat: no-repeat">
+					<input type="text" class="form-control-check check"
+						name="checkcode" /> <img alt="验证码" id="imagecode" onclick="javascript:reloadCode();"
+						src="<%=request.getContextPath()%>/ImageServlet">
+					<p>
+						<a href="findPassword.jsp"
+							style="font-family: '微软雅黑'; font-size: 15px; text-decoration: none">忘记密码？</a>
+					</p>
+					<input type="submit" class="form-control dl" value="立  即  登  陆">
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

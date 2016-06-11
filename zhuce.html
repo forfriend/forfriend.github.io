@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<title>注册页面</title>
+<link href="./css/zhuce.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+	<div class="container">
+	<h1>注册徐站会员</h1>
+	
+	<p class="lead">一起来讨论足球...</p>
+		<div class="form">
+			<form>
+				<table width="500px" style="table-layout: fixed">
+					<tr>
+						<td class="need" style="width: 10px">*</td>
+						<td style="width: 70px" align="right"><label for="InputFile">您的头像</label></td>
+						<td style="width: 205px"><input type="file" name="touxiang" id="InputFile"></td>
+						<td align="center"><div class="Validform_checktip">请选择您的头像</div></td>
+					</tr>
+					<tr>
+						<td class="need" style="width: 10px">*</td>
+						<td style="width: 70px" align="right">用户名:</td>
+						<td style="width: 205px"><input type="text" onblur="check()"
+							id="yonghuming" name="LoginName" class="form-control"></td>
+						<td align="center"><div id="Validform_checktip2"
+								class="Validform_checktip">请输入用户名</div></td>
+					</tr>
+					<tr>
+						<td class="need" style="">*</td>
+						<td style="width: 70px" align="right">邮箱:</td>
+						<td><input type="text" onblur="check()" value=""
+							id="youxiang" name="Email" class="form-control"></td>
+						<td align="center"><div id="Validform_checktip3"
+								class="Validform_checktip">请输入邮箱</div></td>
+					</tr>
+					<tr>
+						<td class="need" style="">*</td>
+						<td style="width: 70px" align="right">密码:</td>
+						<td><input type="password" value="" onblur="check()"
+							id="mima" name="userpassword" class="form-control"
+							oncopy="return False" oncut="return False" onpaste="return False"></td>
+						<td align="center"><div id="Validform_checktip4"
+								class="Validform_checktip">请输入密码</div></td>
+					</tr>
+					<tr>
+						<td class="need">*</td>
+						<td style="width: 70px;" align="right">确认密码:</td>
+						<td><input type="password" value="" onblur="check()"
+							id="mima1" name="userpassword2" class="form-control"
+							oncopy="return False" oncut="return False" onpaste="return False" /></td>
+						<td align="center"><div id="Validform_checktip5"
+								class="Validform_checktip">再次输入密码</div></td>
+					</tr>
+					<tr>
+						<td class="need" style="width: 10px">*</td>
+						<td style="width: 70px" align="right">电话:</td>
+						<td style="width: 205px"><input type="text" onblur="check()"
+							id="phone" name="phone" class="form-control"></td>
+						<td align="center"><div id="Validform_checktip6"
+								class="Validform_checktip">请输入电话</div></td>
+					</tr>
+
+					<tr>
+						<td class="need" style="width: 10px"></td>
+						<td style="width: 70px; color: red" align="right">忘记密码?</td>
+						<td align="center"><a href=""
+							style="color: #34ffec; text-decoration: none">找回密码</a></td>
+						<td align="center"><div class="Validform_checktip">请点击找回</div></td>
+					</tr>
+				</table>
+				<button onClick="check()"
+					style="background: red; border: 0px; color: snow; font-family: '微软雅黑'; font-size: 20px; height: 35px; width: 200px; margin-left: 90px;">注册</button>
+			</form>
+			<script type="text/javascript" src="./js/zhuce.js"></script>
+		</div>
+	</div>
+</body>
+</html>

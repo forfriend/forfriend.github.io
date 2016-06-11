@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+div.container{
+    width: 100%;
+    height: 100%;
+}
+div.body{
+    height: 400px;
+    width: 400px;
+    margin: 50px auto;
+}
+form.registerform{
+    height: 300px;
+    width: 345px;
+    box-shadow: 2px 4px 14px rgba(0,0,0,.5);
+}
+input.form-control{
+    border: 1px solid #ffbb46;
+    height: 35px;
+    width: 304px ;
+    border-radius: 0px;
+    margin: 5px auto;
+    padding-left: 34px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+input.form-control:hover{
+    box-shadow: 1px 2px 4px rgba(0,0,255,.4);
+}
+input.form-control-check{
+    width: 120px;
+    height: 27px;
+}
+input.dl{
+    height: 35px;
+    width: 200px;
+    background-color: red;
+    color: #fff;
+    font-family: '΢���ź�', Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: large;
+    padding-left: 10px;
+    font-weight: bold;
+}
+#imagecode{
+    margin-left: 100px;
+}
+p.p{
+  text-align: center;
+    margin: 10px auto;
+    font-family: '΢���ź�', Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #df9305;
+}
+.Validform_checktip {
+    line-height: 14px;
+    height: 14px;
+    color: paleturquoise;
+    font-size: 10px;
+    text-align:center;
+}
